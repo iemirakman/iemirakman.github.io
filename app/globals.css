@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/* GitHub Dark theme — single dark theme, black & gray blend */
+:root {
+  color-scheme: dark;
+  --background: oklch(0.16 0.012 262); /* #0d1117 */
+  --foreground: oklch(0.93 0.008 255); /* #e6edf3 */
+  --card: oklch(0.21 0.012 262); /* #161b22 */
+  --card-foreground: oklch(0.93 0.008 255);
+  --popover: oklch(0.21 0.012 262);
+  --popover-foreground: oklch(0.93 0.008 255);
+  --primary: oklch(0.93 0.008 255);
+  --primary-foreground: oklch(0.16 0.012 262);
+  --secondary: oklch(0.28 0.012 262); /* #21262d */
+  --secondary-foreground: oklch(0.93 0.008 255);
+  --muted: oklch(0.28 0.012 262);
+  --muted-foreground: oklch(0.68 0.01 255); /* #8b949e */
+  --accent: oklch(0.32 0.012 262); /* #30363d hover */
+  --accent-foreground: oklch(0.93 0.008 255);
+  --destructive: oklch(0.66 0.19 25);
+  --border: oklch(0.32 0.012 262); /* #30363d */
+  --input: oklch(0.32 0.012 262);
+  --ring: oklch(0.55 0.01 255);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

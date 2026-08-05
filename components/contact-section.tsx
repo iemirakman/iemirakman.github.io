@@ -119,7 +119,8 @@ export function ContactSection({ profile }: { profile: GitHubProfile }) {
               </p>
             )}
           </div>
-          {/* Statik İletişim Butonu */}
+        </div>
+        {/* Statik İletişim Butonu */}
         <div className="flex flex-col items-center justify-center rounded-lg border border-border bg-card p-8 md:col-span-2 text-center">
           <h3 className="mb-2 font-mono text-lg font-semibold text-foreground">Birlikte Çalışalım</h3>
           <p className="mb-6 text-sm text-muted-foreground">
@@ -131,7 +132,6 @@ export function ContactSection({ profile }: { profile: GitHubProfile }) {
           >
             E-posta Gönder
           </a>
-        </div>
         </div>
       </div>
     </section>

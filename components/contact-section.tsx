@@ -119,6 +119,19 @@ export function ContactSection({ profile }: { profile: GitHubProfile }) {
               </p>
             )}
           </div>
+          {/* Statik İletişim Butonu */}
+        <div className="flex flex-col items-center justify-center rounded-lg border border-border bg-card p-8 md:col-span-2 text-center">
+          <h3 className="mb-2 font-mono text-lg font-semibold text-foreground">Birlikte Çalışalım</h3>
+          <p className="mb-6 text-sm text-muted-foreground">
+            Akademik araştırmalarım, geliştirdiğim yazılım projeleri veya iş birliği fırsatları için benimle doğrudan iletişime geçebilirsiniz.
+          </p>
+          <a 
+            href="mailto:iemirakman@icloud.com" 
+            className="rounded-md bg-primary px-6 py-3 font-mono text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            E-posta Gönder
+          </a>
+        </div>
         </div>
       </div>
     </section>

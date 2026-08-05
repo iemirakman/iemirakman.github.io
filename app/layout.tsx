@@ -13,29 +13,12 @@ export const metadata: Metadata = {
   title: 'İbrahim Emir Akman — Full-Stack Developer',
   description:
     'İbrahim Emir Akman kişisel portfolyo. Full-Stack Developer, Information Systems öğrencisi. Projeler, GitHub istatistikleri ve iletişim.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  generator: 'iemirakman',
 }
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#0d1117',
+  themeColor: '#141414',
 }
 
 export default function RootLayout({

@@ -1,7 +1,6 @@
 import type { GitHubProfile } from '@/lib/github'
 import { Globe, MapPin, Building2, ArrowUpRight } from 'lucide-react'
 import { GithubIcon, XIcon } from '@/components/brand-icons'
-import { ContactForm } from '@/components/contact-form'
 
 export function ContactSection({ profile }: { profile: GitHubProfile }) {
   const blogUrl = profile.blog
@@ -121,9 +120,6 @@ export function ContactSection({ profile }: { profile: GitHubProfile }) {
             )}
           </div>
         </div>
-
-        {/* Contact form */}
-        <ContactForm />
       </div>
     </section>
   )
